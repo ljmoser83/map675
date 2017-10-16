@@ -116,10 +116,6 @@
                 style: cityLimitsOptions
             }).addTo(map);
 
-            //            L.geoJson(neighborhoodsData, {
-            //                style: neighborhoodOptions
-            //            }).addTo(map);
-
             L.geoJson(neighborhoodsData, {
                 style: neighborhoodOptions,
                 onEachFeature: function (feature, layer) {
@@ -155,16 +151,6 @@
                         type === 'TRAM' ? tramOptions : otherRoutes;
                 }
             }).addTo(map);
-
-
-
-            //            L.geoJson(cityLimitsData).addTo(map);
-            //            L.geoJson(neighborhoodsData).addTo(map);
-            //            L.geoJson(transitRoutesData).addTo(map);
-            //            L.geoJson(urbanAreasData).addTo(map);
-
-
-
         }
 
     </script>
